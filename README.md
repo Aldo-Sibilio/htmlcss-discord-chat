@@ -1,0 +1,1 @@
+Replicare il layout della chat di Discord in versione mobile.
