@@ -5,19 +5,29 @@
 }
 
 .app{
-   display: flex;
+   width: 100%;
+   max-width: 420px;
    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.top-content{
+   flex: 1;
+   display: flex;
+   
    overflow: hidden;
 }
 
 .sidebar{
-   width: 80px;
-   background-color: #1e1f22;
+   width: 80px;   
+   background-color: #111214;
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding-top: 100px;
-   gap: 15px;
+   padding-top: 15px;
+   gap: 20px;
 }
 
 .sidebar img{
@@ -28,9 +38,13 @@
 
 .chat{
    flex: 1;
-   background-color: #1e1f22;
+   background-color: #2b2d31;
    display: flex;
    flex-direction: column;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   overflow: hidden;
+
 }
 
 .chat-header{
@@ -81,9 +95,25 @@
 }
 
 .chat-footer{
-   height: 0px;
-   background-color: transparent;
+   height: 80px;
+   background-color: #1e1f22;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border-top: 1px solid #3a3d45;
+}
 
+.footer-item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 6px;
+   color: #b5bac1;
+   font-size: 12px;
+}
+
+.footer-item i{
+   font-size: 20px;
 }
 
 .chat-item{
@@ -133,5 +163,18 @@
 
 .chat-message{
    color: #b5bac1;
+   font-weight: 400;
    font-size: 14px;
+}
+
+body{
+   font-family: 'Nunito', sans-serif;
+   display: flex;
+   justify-content: center;
+   background-color: #111214;
+}
+
+.app{
+   max-width: 420px;
+   width: 100%;
 }
